@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<!--HTMLの定義--> 
+<html lang="ja">
+<!--HEADの定義--> 
+<head>
+  <!--文字コードの定義-->   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--タイトルの定義--> 
+  <title>博多一幸舎メニュー</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+    <!--メニューボタン-->
+    <dl>ラーメン
+      <dt id="awakei">泡系豚骨
+        <dd><button class="product" data-name="味玉白ネギチャーシュー麺" data-price="1480">味玉白ネギチャーシュー麺</button></dd>
+        <dd><button class="product" data-name="味玉チャーシュー麺" data-price="1280">味玉チャーシュー麺</button></dd>
+        <dd><button class="product" data-name="味玉ラーメン" data-price="980">味玉ラーメン</button></dd>
+        <dd><button class="product" data-name="チャーシュー麺" data-price="1100">チャーシュー麺</button></dd>
+        <dd><button class="product" data-name="味玉白ネギラーメン" data-price="1180">味玉白ネギラーメン</button></dd>
+        <dd><button class="product" data-name="白ネギラーメン" data-price="1000">白ネギラーメン</button></dd>
+        <dd><button class="product" data-name="豚骨ラーメン" data-price="800">ラーメン</button></dd>
+        <dd><button class="product" data-name="赤ラーメン" data-price="1000">赤ラーメン</button></dd>
+        <dd><button class="product" data-name="黒ラーメン" data-price="1000">黒ラーメン</button></dd>
+        <dd><button class="product" data-name="お子様ラーメン" data-price="550">お子様ラーメン</button></dd>
+      </dt>
+      <dt>醤油豚骨
+       <dd><button id="shoyu-ajinegitya" class="product" data-name="醬油味玉白ネギチャーシュー麺" data-price="1460">味玉ネギチャーシュー麺</button></dd>
+       <dd><button id="shoyu-ajitya" class="product" data-name="醬油味玉チャーシュー麺" data-price="1260">味玉チャーシュー麺</button></dd>
+       <dd><button id="shoyu-ajira" class="product" data-name="醬油味玉ラーメン" data-price="960">味玉ラーメン</button></dd>
+       <dd><button id="shoyu-tyara" class="product" data-name="醤油チャーシュー麺" data-price="1080" >チャーシュー麺</button></dd>
+       <dd><button id="shoyu-ajinegira" class="product" data-name="醬油味玉ネギラーメン" data-price="1160" >味玉ネギラーメン</button></dd>
+       <dd><button id="shoyu-negira" class="product" data-name="醬油ネギラーメン" data-price="980">ネギラーメン</button></dd>
+       <dd><button id="shoyu-ramen" class="product" data-name="醤油豚骨ラーメン" data-price="780" >ラーメン</button></dd>
+      </dt>
+    </dl>
+    <dl>サイド
+      <dt>通常価格
+        <dd><button id="tyamayo" class="product" data-name="チャ―マヨ丼" data-price="400">チャ―マヨ丼</button></dd>
+        <dd><button id="mentaidon-add" class="product" data-name="明太丼" data-price="400" >明太丼</button></dd>
+        <dd><button id="mentaibako-add" class="product" data-name="明太箱" data-price="650">明太箱</button></dd>
+        <dd><button id="rice" class="product" data-name="ごはん" data-price="180">ごはん</button></dd>
+        <dd><button id="gyoza" class="product" data-name="餃子" data-price="610">餃子</button></dd>
+        <dd><button id="halfgyoza" class="product" data-name="半餃子" data-price="390">半餃子</button></dd>
+      </dt>
+      <dt>セット価格
+        <dd><button id="settyamayo" class="product" data-name="セットチャ―マヨ丼" data-price="380">セットチャ―マヨ丼</button></dd>
+        <dd><button id="setmentaidon" class="product" data-name="セット明太丼" data-price="380">セット明太丼</button></dd>
+        <dd><button id="setmentaibako" class="product" data-name="セット明太箱" data-price="600">セット明太箱</button></dd>
+      </dt>
+    </dl>
+    <dl>ドリンク
+      <dt>
+        <dd><button id="coke" class="product" data-name="コーラ" data-price="250">コーラ</button></dd>
+        <dd><button id="orenji" class="product" data-name="オレンジ" data-price="250">オレンジ</button></dd>
+        <dd><button id="oolongtea" class="product" data-name="烏龍茶" data-price="250">烏龍茶</button></dd>
+        <dd><button id="beel" class="product" data-name="生ビール" data-price="600">生ビール</button></dd>
+        <dd><button id="glass_beel" class="product" data-name="グラスビール" data-price="400">グラスビール</button></dd>
+        <dd><button id="highball" class="product" data-name="ハイボール" data-price="450">ハイボール</button></dd>
+      </dt>
+    </dl>
+    <dl>トッピング
+      <dt>
+        <dd><button id="ajitama" class="product" data-name="味玉" data-price="180">味玉</button></dd>
+        <dd><button id="aonegi" class="product" data-name="青ネギ" data-price="200">青ネギ</button></dd>
+        <dd><button id="sironegi" class="product" data-name="白ネギ" data-price="200">白ネギ</button></dd>
+        <dd><button id="kikurage" class="product" data-name="きくらげ" data-price="150">きくらげ</button></dd>
+        <dd><button id="red" class="product" data-name="赤変更" data-price="200">赤変更</button></dd>
+        <dd><button id="black" class="product" data-name="黒変更" data-price="200">黒変更</button></dd>
+        <dd><button id="cha-shu" class="product" data-name="チャーシュー３枚" data-price="300">チャーシュー３枚</button></dd>
+      </dt>
+    </dl>
+    
+    <!--リセットボタン-->
+    <dl id="resetbutton">
+      <button id="reset" type="button">リセット</button>
+    </dl>
+
+    <!--配置-->
+    <p>合計金額: <span id="sum">0</span></p>
+    <p>カート: <span id="cart"></span></p>
+    <!--<p> <span id="cart"></span></p>-->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>

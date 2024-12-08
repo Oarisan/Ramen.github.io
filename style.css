@@ -1,0 +1,118 @@
+/* ページ全体の基本設定 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* メニュー項目のレイアウト */
+dl {
+  margin: 20px;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1200px; /* 最大幅を設定 */
+}
+
+dt {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ボタンのスタイル */
+.product {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  font-size: 14px; /* ボタンを小さく */
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+/* ボタンにホバー時の効果 */
+.product:hover {
+  background-color: #45a049;
+}
+
+/* カートと合計金額の表示位置 */
+#sum, #cart {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#resetbutton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#reset {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#reset:hover {
+  background-color: #e64a19;
+}
+
+/* 合計金額とカートを固定位置に */
+.fixed-info {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.fixed-info p {
+  margin: 0;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  .product {
+      font-size: 12px; /* 小さいスクリーンではさらに小さく */
+  }
+
+  dl {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  dd {
+      width: 80%; /* スマホではボタンを少し大きめに */
+  }
+}
